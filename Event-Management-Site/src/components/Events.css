@@ -1,0 +1,83 @@
+/* .event-grid {
+  padding: 20px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.glimpse{
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 50%;
+  
+  
+}
+.glimpse h2{
+  text-align: center;
+}
+
+.event-category {
+  margin-bottom: 40px;
+} */
+
+.event-grid {
+  padding: 20px;
+  padding-top: 140px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.glimpse {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.glimpse h2 {
+  text-align: center;
+}
+
+.event-category {
+  margin-bottom: 40px;
+}
+
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  overflow-x: auto;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+  /* max-width: 1000px; */
+  scroll-behavior: smooth;
+}
+
+.image-row img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover; /* crops extra part, keeps uniform size */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  
+}
+
+/* Optional hover effect */
+.image-row img:hover {
+  transform: scale(1.05);
+}
+
+
+.image-row img {
+  flex: 1 1 200px;  /* Allow images to shrink and grow */
+  max-width: 250px; /* Maximum size for large screens */
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+
+

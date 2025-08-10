@@ -1,0 +1,39 @@
+.mission-vision-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.mv-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  gap: 20px;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+.mv-title {
+  flex: 1;
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.mv-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.mv-title h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.mv-content {
+  flex: 3;
+  text-align: justify;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
