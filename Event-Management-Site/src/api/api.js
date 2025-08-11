@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000", // backend base URL
+  baseURL: "https://event-management-fk2f.onrender.com", // backend base URL
 });
 
 // Example API calls:

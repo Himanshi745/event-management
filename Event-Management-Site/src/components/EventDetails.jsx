@@ -6,7 +6,7 @@ const EventDetails = () => {
   const [event, setEvent] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/events/${id}`)
+    fetch(`https://event-management-miu9.onrender.com/api/events/${id}`)
       .then((res) => res.json())
       .then((data) => setEvent(data))
       .catch((err) => console.error("Failed to load event", err));

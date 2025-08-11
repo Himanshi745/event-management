@@ -19,7 +19,7 @@ const AdminAddEvent = () => {
 
   const fetchEvents = async () => {
     try {
-      const { data } = await axios.get("http://localhost:5000/api/events");
+      const { data } = await axios.get("https://event-management-miu9.onrender.com/api/events");
       setEvents(data);
     } catch (err) {
       console.error("Error fetching events:", err);
@@ -41,14 +41,14 @@ const AdminAddEvent = () => {
     const imagesArray = formData.images.split(",").map((img) => img.trim());
     
      if (formData._id) {
-      await axios.put(`http://localhost:5000/api/events/${formData._id}`, {
+      await axios.put(`https://event-management-miu9.onrender.com/api/events/${formData._id}`, {
         ...formData,
         images: imagesArray,
       });
       alert("Event updated successfully!");
     }
     else{
-      await axios.post("http://localhost:5000/api/events", {
+      await axios.post("https://event-management-miu9.onrender.com/api/events", {
       ...formData,
       images: imagesArray,
       
@@ -80,7 +80,7 @@ const AdminAddEvent = () => {
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure you want to delete this event?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/events/${id}`);
+      await axios.delete(`https://event-management-miu9.onrender.com/api/events/${id}`);
       alert("Event deleted successfully!");
       fetchEvents(); // refresh list
     } catch (error) {
